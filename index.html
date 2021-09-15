@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
 
-    <!-- When the button is clicked I call the 'alertBox()' function -->
-    <button onclick="alertBox()">Button for alert box</button>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS - Fundamentals & Data Types</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <!-- Change the HTML content (innerHTML) of this paragraph with the function 'chageText()' when the paragraph is clicked -->
-    <p id="changeText" onclick="chageText()">Click me to change my HTML content (innerHTML).</p>
+<body>
 
-    <!-- Here I am referencing the script to be able to call it inside this html file -->
-    <script src="script.js"></script>
+	<!-- When the button is clicked I call the 'alertBox()' function -->
+	<button onclick="alertBox()">Button for alert box</button>
+
+  <!-- Change the HTML content (innerHTML) of this paragraph with the function 'chageText()' when the paragraph is clicked -->
+  <p id="changeText" onclick="chageText()">Click me to change my HTML content (innerHTML).</p>
+
+
+  <!-- Form to get users name and age -->
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age"><br><br>
+  <!-- Calling the function displayNameAge() when user hits the submit button -->
+  <button onclick="displayNameAge()">Submit</button><br><br>
+  <!-- An empty div that is filled in with javascript when users submits there information -->
+  <div id="displayNameAge"></div>
+
+  <!-- Here I am referencing the script to be able to call it inside this html file -->
+  <script src="script.js"></script>
   </body>
 </html>
